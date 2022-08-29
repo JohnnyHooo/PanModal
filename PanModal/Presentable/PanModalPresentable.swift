@@ -29,9 +29,7 @@ public protocol PanModalPresentable: AnyObject {
     var panScrollable: UIScrollView? { get }
 
     /**
-     The offset between the top of the screen and the top of the pan modal container view.
-
-     Default value is the topLayoutGuide.length + 21.0.
+     不响应区域
      */
     var dismissTopOffset: CGFloat { get }
 
