@@ -126,6 +126,8 @@ open class PanModalPresentationController: UIPresentationController {
      */
     private lazy var panContainerView: PanContainerView = {
         let frame = containerView?.frame ?? .zero
+        let height = presentable?.dismissTopOffset ?? 0
+        containerView?.frame = CGRect(x: 0, y: frame.size.height - height, width: frame.size.width, height: height)
         return PanContainerView(presentedView: presentedViewController.view, frame: frame)
     }()
 

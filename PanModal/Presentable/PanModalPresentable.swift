@@ -33,6 +33,14 @@ public protocol PanModalPresentable: AnyObject {
 
      Default value is the topLayoutGuide.length + 21.0.
      */
+    var dismissTopOffset: CGFloat { get }
+
+    
+    /**
+     The offset between the top of the screen and the top of the pan modal container view.
+
+     Default value is the topLayoutGuide.length + 21.0.
+     */
     var topOffset: CGFloat { get }
 
     /**
